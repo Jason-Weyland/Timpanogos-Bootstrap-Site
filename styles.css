@@ -14,3 +14,8 @@ h3 {
 .navbar {
     background-color: #4c5401;
 }
+
+.site-footer {
+    background-image: linear-gradient(#f8c37a, #7b8337);
+    padding: 20px 0;
+}
