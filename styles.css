@@ -1,0 +1,16 @@
+h1,
+h2,
+h3 {
+    font-family: "Amatic SC";
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, #ffa626, #4c5401);
+    color: white;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #4c5401;
+}
