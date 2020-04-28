@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- Required meta tags always come first -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Jason Weyland" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Timpanogos Grotto</title>
+    </head>
+    <body>
+        <!-- Jumbotron -->
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-lg-2 align-self-center">
+                        <a href="index.html"><img src="images/logo.jpg" class="img-fluid" /></a>
+                    </div>
+                    <div class="col col-md-5">
+                        <h1 class="text-dark align-self-center"><strong>Timpanogos Grotto</strong></h1>
+                        <div class="row">
+                            <h2 class="col-12 d-none d-md-inline-flex"><small>"Take nothing but pictures</small></h2>
+                            <h2 class="col-12 d-none d-md-inline-flex offset-1"><small>Leave nothing but footprints</small></h2>
+                            <h2 class="col-12 d-none d-md-inline-flex offset-2"><small>Waste nothing but time..."</small></h2>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-end align-self-center">
+                        <a href=""><button type="button" class="btn btn-warning btn-lg mt-4">Join Us</button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="images/logo.jpg" height="30" width="30" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#timpNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="timpNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"
+                                ><i class="fa fa-home fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Home</small></span
+                                ><span class="d-sm-none d-lg-inline"> Home</span></a
+                            >
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                ><i class="fa fa-info fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> About</small></span
+                                ><span class="d-sm-none d-lg-inline"> About</span></a
+                            >
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item text-dark" href="#">About</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-dark" href="#">Meet the Grotto</a>
+                                <a class="dropdown-item text-dark" href="#">FAQ</a>
+                                <a class="dropdown-item text-dark" href="#">Become a Member</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                ><i class="fa fa-newspaper-o fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Grotto News/Events</small></span
+                                ><span class="d-sm-none d-lg-inline"> Grotto News/Events</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                ><i class="fas fa-mountain fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Caves</small></span
+                                ><span class="d-sm-none d-lg-inline"> Caves</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                ><i class="fa fa-handshake-o fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Join us</small></span
+                                ><span class="d-sm-none d-lg-inline"> Join Us</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                ><i class="fa fa-id-card fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Contact</small></span
+                                ><span class="d-sm-none d-lg-inline"> Contact</span></a
+                            >
+                        </li>
+                    </ul>
+                    <span class="nav-text text-light ml-auto">
+                        <a role="button" data-toggle="modal" data-target="#signinModal"
+                            ><i class="fa fa-sign-in fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Sign In</small></span
+                            ><span class="d-sm-none d-lg-inline"> Sign In</span></a
+                        >
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">About</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Tabs -->
+        <div class="container">
+            <div class="row">
+                <div class="col d-felx justify-content-center">
+                    <ul class="nav nav nav-tabs nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" href="#aboutTab" role="tab" data-toggle="tab">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#officerTab" role="tab" data-toggle="tab">Meet the Officers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#faqTab" role="tab" data-toggle="tab">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#joinTab" role="tab" data-toggle="tab">Become a Member</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="aboutTab" role="tabpanel">
+                            <div class="container">
+                                <div class="row row-content">
+                                    <div class="col-12 col-md-4 order-last order-md-first">
+                                        <img class="align-self-center d-flex mr-5 img-thumbnail" src="images/flowStone.jpg" alt="Flow Stone" width="100%" height="auto" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h2><strong>What is the Timpanogos Grotto?</strong></h2>
+                                        <p>
+                                            The Timpanogos Grotto was established September 25, 1974 as a local chapter of the National Speleological Society (NSS), “...to promote interest in and to advance in any and all ways the study and science of Speleology, to promote the protection of caves
+                                            and their natural contents, and to promote fellowship among those interested therein."
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row row-content">
+                                    <div class="col-12 col-md-8">
+                                        <h2><strong>Meetings</strong></h2>
+                                        <p><strong>We invite everybody to attend our monthly grotto meetings.</strong></p>
+                                        <p>
+                                            The Timpanogos Grotto meets in the Orem City Library basement meeting room located at 58 N. State Street - Orem, Utah. The program for our meetings varies. What you can expect: We often share caving trips from the last month, have a presentation, and cave
+                                            trips are often planned at meetings. Some grotto meetings focus on practicing vertical skills, in which meetings will take place elsewhere. In this case, the meeting place will be posted in advance either on the calendar or our facebook page.
+                                        </p>
+                                        <p>Time: 7:00 PM to 8:00 PM</p>
+                                        <p>We hold our grotto meetings on the third Tuesday of each month at the orem Library.</p>
+                                        <a role="button" class="btn btn-link" href="https://www.google.com/maps/place/Orem+Public+Library/@40.298669,-111.69467,15z/data=!4m5!3m4!1s0x0:0x595700ed210f2254!8m2!3d40.298669!4d-111.69467" target="_blank"><i class="fa fa-map"></i> Orem Public Library</a>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <img class="align-self-center img-thumbnail" src="images/lbccShadow.jpg" alt="Little Brush Creek Cave" width="100%" height="auto" />
+                                    </div>
+                                </div>
+                                <div class="row row-content">
+                                    <div class="col-6 col-md-4 order-last order-sm-first">
+                                        <img class="align-self-center img-thumbnail" src="images/spanishMoss.jpg" alt="Spanish Moss" width="100%" height="auto" />
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h2><strong>Caving Ethics</strong></h2>
+                                        <p>As stewards of the underground environment, Timpanogos Grotto members adhere to a strong “moral” code of caving ethics.</p>
+                                        <p>The NSS and Timpanogos Grotto believe:</p>
+                                        <ul>
+                                            <li>Caves have unique scientific, recreational, and scenic values;</li>
+                                            <li>These values are endangered by both carelessness and intentional vandalism.</li>
+                                            <li>These values, once gone, cannot be recovered.</li>
+                                            <li>The responsibility for protecting caves must be formed by those who study and enjoy them.</li>
+                                        </ul>
+                                        <p>
+                                            All contents of a cave — formations, life, and loose deposits — are significant for their enjoyment and interpretation. Therefore, caving parties should leave a cave as they find it. They should provide means for the removal of waste; limit marking to a
+                                            few, small, and removable signs as are needed for surveys; and, especially, exercise extreme care not to accidentally break or soil formations, disturb life forms or unnecessarily increase the number of disfiguring paths through an area.
+                                        </p>
+                                        <p>Leave nothing but footprints, take nothing but photos, kill nothing but time.</p>
+                                        <a href="https://en.wikipedia.org/wiki/Federal_Cave_Resources_Protection_Act_of_1988" target="_blank">Federal Cave Resources Protection Act</a>
+                                    </div>
+                                    <div class="col">
+                                        <div class="accordion mt-5" id="ethicsAccordion">
+                                            <div class="card">
+                                                <div class="card-header" role="tab">
+                                                    <h5><a data-toggle="collapse" data-target="#ethicsTab">Cave Ethics Course</a></h5>
+                                                </div>
+                                                <div class="collapse" id="ethicsTab" data-parent="#ethicsAccordion">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            Each section contains information resources to help you learn the basics of ethical behavior in caves. Once you have read through each section, explored the information on the links provided and watched the videos, you have completed the
+                                                            course. We encourage anyone interested in joining the Timpanogos Grotto to go through each section in depth and apply the information to any caving activities you participate in.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab">
+                                                    <h5><a data-toggle="collapse" data-target="#traceTab">Leave No Trace</a></h5>
+                                                </div>
+                                                <div class="collapse" id="traceTab" data-parent="#ethicsAccordion">
+                                                    <div class="card-body">
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <iframe class="embed-responsive-item" width="50%" height="auto" src="https://www.youtube.com/embed/Rpq01rO9ZR0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-header" role="tab">
+                                                    <h5><a data-toggle="collapse" data-target="#geoTab">Caves are Geologically Significant</a></h5>
+                                                </div>
+                                                <div class="collapse" id="geoTab" data-parent="#ethicsAccordion">
+                                                    <div class="card-body">
+                                                        <p>Explore the following websites to find out how caves form:</p>
+                                                        <a href="https://www.livescience.com/29735-how-do-caves-form-.html" target="_blank">How do Caves Form?</a>
+                                                        <br />
+                                                        <a href="https://www.zmescience.com/science/how-caves-form/" target="_blank">How Caves Form and the Different Types of Caves</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-content">
+                                    <div class="col-12 col-md-6">
+                                        <!-- <br /> -->
+                                        <h3 class="d-flex justify-content-center" id="check">Utah Cave Density</h3>
+                                        <img src="images/caveDensity.jpg" width="100%" height="auto" />
+                                    </div>
+                                    <div class="col-12 col-md-6 order-first order-md-last">
+                                        <br />
+                                        <br />
+                                        <div class="card">
+                                            <div class="card-header card-header-green">
+                                                <h3 class="text-light">Facts about the Timpanogos Grotto</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <dl class="row">
+                                                    <dt class="col-6">Established</dt>
+                                                    <dd class="col-6">September 25, 1974</dd>
+                                                    <dt class="col-6">Grotto Members</dt>
+                                                    <dd class="col-6">15</dd>
+                                                    <dt class="col-6">Known Caves in Utah</dt>
+                                                    <dd class="col-6">560</dd>
+                                                    <dt class="col-6">Utah's Deepest Cave</dt>
+                                                    <dd class="col-6">1,300ft</dd>
+                                                    <dt class="col-6">Utah's Longest Cave</dt>
+                                                    <dd class="col-6">5.93 Miles</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-2 bg-light">
+                                            <blockquote class="blockquote card-body" cite="http://extraordinarywls.blogspot.com/search?q=quote">
+                                                <p class="mb-0">“When I cave, I feel a connection to the Creator. The beauty leaves me speechless. The awesomeness of it all is breathtaking.”</p>
+                                                <footer class="blockquote-footer">
+                                                    Carole Devillers,
+                                                    <cite title="Source Title">Extraordinary Women Leaders in Speleology</cite>
+                                                </footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="officerTab" role="tabpanel">
+                            <p id="officerCheck">Lorem Ipsum</p>
+                        </div>
+                        <div class="tab-pane fade" id="faqTab" role="tabpanel"></div>
+                        <div class="tab-pane fade" id="joinTab" role="tabpanel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" role="dialog" id="signinModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2><strong>Sign In</strong></h2>
+                        <button class="close text-light" type="button" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label for="modalEmail">Email: </label>
+                                        <input class="form-control" type="email" name="modalEmail" id="modalEmail" placeholder="example_email@gmail.com" />
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="modalPassword">Password: </label>
+                                        <input class="form-control" type="password" id="modalPassword" name="modalPassword" />
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                                            <label for="rememberMe" class="form-check-label"> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button class="btn btn-warning ml-auto" type="button">Sign In</button>
+                                    <button class="btn btn-secondary ml-1" type="button" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-2 offset-md-1">
+                        <ul class="list-unstyled">
+                            <!-- <small> -->
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Grotto News & Events</a></li>
+                            <li><a href="#">Caves</a></li>
+                            <li><a href="#">Join Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <!-- </small> -->
+                        </ul>
+                    </div>
+                    <div class="col-8 col-md-4 align-self-center">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <a href="http://www.caves.org" target="_blank"><img src="images/nss_logo_color.gif" alt="NSS Logo" width="60%" /></a>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    For more info about the NSS visit <a href="http://www.caves.org" target="_blank" class="text-dark"><u>caves.org</u></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 align-self-center">
+                        <h5>Contact</h5>
+                        <a role="button" class="btn btn-link text-dark" href="mailto:timpgrotto@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i> timpgrotto@gmail.com</a>
+                        <a role="button" class="btn btn-link text-dark" href="https://www.google.com/maps/place/Orem+Public+Library/@40.298669,-111.69467,15z/data=!4m5!3m4!1s0x0:0x595700ed210f2254!8m2!3d40.298669!4d-111.69467" target="_blank"
+                            ><i class="fa fa-map"></i> 58 N State St, Orem, UT 84057</a
+                        >
+                        <p>Meetings: Third Tuesday of each month @ 7:00 p.m. MST</p>
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram my-1" href="https://www.instagram.com/timp.grotto/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook my-1" href="https://www.facebook.com/timpanogosgrotto/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

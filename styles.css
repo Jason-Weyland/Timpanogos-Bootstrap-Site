@@ -15,6 +15,10 @@ h3 {
     background-color: #4c5401;
 }
 
+.dropdown-menu {
+    background-color: #ffa626;
+}
+
 .site-footer {
     background-image: linear-gradient(#f8c37a, #7b8337);
     padding: 20px 0;
@@ -22,6 +26,20 @@ h3 {
 
 html {
     overflow-x: hidden;
+}
+
+.modal-header {
+    background-color: #ffa626;
+}
+
+.card-header-green {
+    background-color: #4c5401;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
 }
 
 /* #bgCarousel {
