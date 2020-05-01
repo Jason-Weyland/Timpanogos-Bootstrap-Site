@@ -102,3 +102,27 @@ body {
     height: auto;
     /* width: max-content; */
 }
+
+@media screen and (max-width: 768px) {
+    .calendar {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fb-page {
+        width: 328px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fb-page {
+        width: 448px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .fb-page {
+        width: 452.8px;
+    }
+}

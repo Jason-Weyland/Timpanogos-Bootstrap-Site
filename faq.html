@@ -57,15 +57,15 @@
                             >
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 ><i class="fa fa-info fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> About</small></span
                                 ><span class="d-sm-none d-lg-inline"> About</span></a
                             >
                             <div class="dropdown-menu">
-                                <a class="dropdown-item text-dark" href="#">About</a>
+                                <a class="dropdown-item text-dark" href="about.html">About</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item text-dark" href="meet.html">Meet the Officers</a>
-                                <a class="dropdown-item text-dark" href="faq.html">FAQ</a>
+                                <a class="dropdown-item text-dark" href="#">FAQ</a>
                                 <a class="dropdown-item text-dark" href="join.html">Become a Member</a>
                             </div>
                         </li>
@@ -147,7 +147,8 @@
                     <div class="col">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">About</li>
+                            <li class="breadcrumb-item"><a href="about.html">About</a></li>
+                            <li class="breadcrumb-item active">FAQ</li>
                         </ol>
                     </div>
                 </div>
@@ -158,7 +159,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a class="text-dark" href="#"
+                    <a class="text-dark" href="about.html"
                         ><u
                             ><h3 class="text-center"><strong>About Us</strong></h3></u
                         ></a
@@ -172,7 +173,7 @@
                     >
                 </div>
                 <div class="col">
-                    <a class="text-dark" href="faq.html"
+                    <a class="text-dark" href="#"
                         ><u
                             ><h3 class="text-center"><strong>FAQ</strong></h3></u
                         ></a
@@ -187,98 +188,102 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="row row-content">
-                <div class="col-12 col-md-4 order-last order-md-first">
-                    <img class="align-self-center d-flex mr-5 img-thumbnail" src="images/flowStone.jpg" alt="Flow Stone" width="100%" height="auto" />
-                </div>
-                <div class="col-12 col-md-8">
-                    <h2><strong>What is the Timpanogos Grotto?</strong></h2>
-                    <p>
-                        The Timpanogos Grotto was established September 25, 1974 as a local chapter of the National Speleological Society (NSS), “...to promote interest in and to advance in any and all ways the study and science of Speleology, to promote the protection of caves and their natural
-                        contents, and to promote fellowship among those interested therein."
-                    </p>
-                    <div class="col">
+                <div class="col">
+                    <h2><strong>Frequently Asked Questions</strong></h2>
+                    <div class="accordion mt-5" id="faqAccordion">
                         <div class="card">
-                            <div class="card-header card-header-green">
-                                <h3 class="text-light">Facts about the Timpanogos Grotto</h3>
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#caveList">How do I obtain a list of caves in my area?</a></h5>
                             </div>
-                            <div class="card-body">
-                                <dl class="row">
-                                    <dt class="col-6">Established</dt>
-                                    <dd class="col-6">September 25, 1974</dd>
-                                    <dt class="col-6">Grotto Members</dt>
-                                    <dd class="col-6">15</dd>
-                                    <dt class="col-6">Known Caves in Utah</dt>
-                                    <dd class="col-6">560</dd>
-                                    <dt class="col-6">Utah's Deepest Cave</dt>
-                                    <dd class="col-6">1,300ft</dd>
-                                    <dt class="col-6">Utah's Longest Cave</dt>
-                                    <dd class="col-6">5.93 Miles</dd>
-                                </dl>
+                            <div class="collapse" id="caveList" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>
+                                        The best way to find caves in your area is by becoming a member of the grotto. As a member, you will have access to caving trips, meetings, and our member forums where you can introduce yourself and meet other cavers in your area. As a rule, cave locations are
+                                        not published in order to help protect the cave.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#memberTab">How do I become a member?</a></h5>
+                            </div>
+                            <div class="collapse" id="memberTab" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>Click the "Become a Member" tab on our about us page. Likewise, you can also come to any meeting and pay dues there to become a member. Dues are $15/year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#grottoTab">What is a grotto?</a></h5>
+                            </div>
+                            <div class="collapse" id="grottoTab" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>The term 'grotto' is synonymous with 'club' or 'chapter', as in a chapter of a larger organization. The Timpanogos Grotto primarily serves the Central Utah area, and is one of around 250 chapters of the National Speleological Society.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#nssTab">What is the National Speleological Society?</a></h5>
+                            </div>
+                            <div class="collapse" id="nssTab" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>
+                                        The National Speleological Society (NSS) is a non-profit membership organization dedicated to the scientific study of caves and karst; protecting caves and their natural contents through conservation, ownership, stewardship, and public education; and promoting
+                                        responsible cave exploration and fellowship among those interested in caves. [taken from the NSS mission statement] The NSS is our parent organization. Almost all of us are also members of the NSS.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#locationsTag">Can't I just visit the caves on my own? Why do I have to join a group to learn their locations?</a></h5>
+                            </div>
+                            <div class="collapse" id="locationsTag" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>
+                                        Caves that get abused become closed to everyone, including even the most responsible, veteran cavers. People new to caving may unknowingly abuse caves; examples include touching formations or creatures, walking in protected areas, or not using pads when
+                                        rigging rope. There are even some people who intentionally abuse caves, leaving behind trash, graffiti, and even human waste. We subscribe to a "leave no trace" philosophy, and do our best to protect our underground treasures from both accidental and
+                                        intentional harm. This includes only sharing locations with those who we trust to also cherish and protect them.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#gearTab">What if I don't know what gear to get, how to climb rope, etc?</a></h5>
+                            </div>
+                            <div class="collapse" id="gearTab" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>
+                                        This is one of the major benefits to joining a grotto! The Timpanogos Grotto offers vertical classes, access to an entire library of caving books, publications, trips for all skill levels, and monthly educational meetings. All of our members were once new,
+                                        too. We're happy to help you figure out what will work, offer guidance, and point you in the right direction. Our members range from first-time cavers to seasoned veterans and everything in between.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5><a data-toggle="collapse" data-target="#safeTab">Is caving safe?</a></h5>
+                            </div>
+                            <div class="collapse" id="safeTab" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>
+                                        No. Caving is an inherently dangerous activity. People are injured and die every year. The caving we do does not involve guard rails, paved paths, and stairs. The kind of caving we do is NOT a tour. This is why we take safety seriously. Also, caving is not for
+                                        everyone. We are happy to get you started, but we do not hold your hand - everyone is ultimately responsible for themselves. We try to help make it as safe as possible, but caving is not simply hiking underground. If we do not think you can handle yourself
+                                        safely or if you cannot follow conservation guidelines, you will not be invited on or allowed to join trips. It is not just your life at risk, it is our lives, too.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row row-content">
-                <div class="col-12 col-md-8">
-                    <h2><strong>Meetings</strong></h2>
-                    <p><strong>We invite everybody to attend our monthly grotto meetings.</strong></p>
-                    <p>
-                        The Timpanogos Grotto meets in the Orem City Library basement meeting room located at 58 N. State Street - Orem, Utah. The program for our meetings varies. What you can expect: We often share caving trips from the last month, have a presentation, and cave trips are often
-                        planned at meetings. Some grotto meetings focus on practicing vertical skills, in which meetings will take place elsewhere. In this case, the meeting place will be posted in advance either on the calendar or our facebook page.
-                    </p>
-                    <p>Time: 7:00 PM to 8:00 PM</p>
-                    <p>We hold our grotto meetings on the third Tuesday of each month at the orem Library.</p>
-                    <a role="button" class="btn btn-link" href="https://www.google.com/maps/place/Orem+Public+Library/@40.298669,-111.69467,15z/data=!4m5!3m4!1s0x0:0x595700ed210f2254!8m2!3d40.298669!4d-111.69467" target="_blank"><i class="fa fa-map"></i> Orem Public Library</a>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img class="align-self-center img-thumbnail" src="images/lbccShadow.jpg" alt="Little Brush Creek Cave" width="100%" height="auto" />
-                </div>
-            </div>
-            <div class="row row-content">
-                <div class="col-6 col-md-4 order-last order-sm-first">
-                    <img class="align-self-center img-thumbnail" id="spanishMoss" src="images/spanishMoss.jpg" alt="Spanish Moss" width="100%" height="auto" />
-                </div>
-                <div class="col-12 col-md-8">
-                    <h2><strong>Caving Ethics</strong></h2>
-                    <p>As stewards of the underground environment, Timpanogos Grotto members adhere to a strong “moral” code of caving ethics.</p>
-                    <p>The NSS and Timpanogos Grotto believe:</p>
-                    <ul>
-                        <li>Caves have unique scientific, recreational, and scenic values;</li>
-                        <li>These values are endangered by both carelessness and intentional vandalism.</li>
-                        <li>These values, once gone, cannot be recovered.</li>
-                        <li>The responsibility for protecting caves must be formed by those who study and enjoy them.</li>
-                    </ul>
-                    <p>
-                        All contents of a cave — formations, life, and loose deposits — are significant for their enjoyment and interpretation. Therefore, caving parties should leave a cave as they find it. They should provide means for the removal of waste; limit marking to a few, small, and
-                        removable signs as are needed for surveys; and, especially, exercise extreme care not to accidentally break or soil formations, disturb life forms or unnecessarily increase the number of disfiguring paths through an area.
-                    </p>
-                    <p>Leave nothing but footprints, take nothing but photos, kill nothing but time.</p>
-                    <a href="https://en.wikipedia.org/wiki/Federal_Cave_Resources_Protection_Act_of_1988" target="_blank">Federal Cave Resources Protection Act</a>
-                </div>
-            </div>
-            <div class="row row-content">
-                <div class="col-12 order-first">
-                    <div class="card mb-5 bg-light text-center">
-                        <blockquote class="blockquote card-body" cite="http://extraordinarywls.blogspot.com/search?q=quote">
-                            <p class="mb-0">“When I cave, I feel a connection to the Creator. The beauty leaves me speechless. The awesomeness of it all is breathtaking.”</p>
-                            <footer class="blockquote-footer">
-                                Carole Devillers,
-                                <cite title="Source Title">Extraordinary Women Leaders in Speleology</cite>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-5 order-last order-md-first">
-                    <h3 class="d-flex justify-content-center" id="check">Utah Cave Density</h3>
-                    <img src="images/caveDensity.jpg" width="100%" height="auto" />
-                </div>
-            </div>
         </div>
-
         <!-- footer -->
         <footer class="site-footer">
             <div class="container">
