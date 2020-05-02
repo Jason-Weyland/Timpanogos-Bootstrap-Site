@@ -14,8 +14,10 @@
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
 
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+        <script src="js.js"></script>
         <title>Timpanogos Grotto</title>
     </head>
     <body>
@@ -50,13 +52,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="timpNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html"
                                 ><i class="fa fa-home fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Home</small></span
                                 ><span class="d-sm-none d-lg-inline"> Home</span></a
                             >
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item active dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 ><i class="fa fa-info fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> About</small></span
                                 ><span class="d-sm-none d-lg-inline"> About</span></a
@@ -191,7 +193,7 @@
         <div class="container">
             <div class="row row-content">
                 <div class="col-12 col-md-4 order-last order-md-first">
-                    <img class="align-self-center d-flex mr-5 img-thumbnail" src="images/flowStone.jpg" alt="Flow Stone" width="100%" height="auto" />
+                    <img id="flowStone" class="align-self-center d-flex mr-5 img-thumbnail" src="images/flowStone.jpg" alt="Flow Stone" width="100%" height="auto" />
                 </div>
                 <div class="col-12 col-md-8">
                     <h2><strong>What is the Timpanogos Grotto?</strong></h2>
@@ -288,10 +290,10 @@
                             <!-- <small> -->
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
                             <li><a href="events.html">Grotto News & Events</a></li>
                             <li><a href="#">Caves</a></li>
-                            <li><a href="#">Join Us</a></li>
+                            <li><a href="join.html">Join Us</a></li>
                             <li><a href="#">Contact</a></li>
                             <!-- </small> -->
                         </ul>

@@ -1,0 +1,88 @@
+$logo-green: #4c5401;
+$logo-yellow: #ffa626;
+$logo-lightYellow: #f8c37a;
+$logo-lightGreen: #7b8337;
+$transparent-black: rgba(0, 0, 0, 0.5);
+
+h1,
+h2,
+h3 {
+    font-family: "Amatic SC";
+}
+
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right, $logo-yellow, $logo-green);
+    color: white;
+    margin: 0;
+}
+
+.navbar {
+    background-color: $logo-green;
+}
+
+.dropdown-menu {
+    background-color: $logo-yellow;
+}
+
+.site-footer {
+    background-image: linear-gradient($logo-lightYellow, $logo-lightGreen);
+    padding: 20px 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.modal-header {
+    background-color: $logo-yellow;
+}
+
+.card-header-green {
+    background-color: $logo-green;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.carousel-inner,
+.carousel-item {
+    background-color: darkslategrey;
+    background-position: center;
+}
+
+.carousel-caption {
+    background-color: $transparent-black;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .calendar {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .fb-page {
+        width: 328px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fb-page {
+        width: 448px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .fb-page {
+        width: 452.8px;
+    }
+}
