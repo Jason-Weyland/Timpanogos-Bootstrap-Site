@@ -98,6 +98,40 @@ $(function () {
     });
 });
 
+$(function () {
+    $("#navJoin").click(function () {
+        if ($("#linkMeet").hasClass("active")) {
+            $("#tabMeet").removeClass("show active");
+            $("#linkMeet").removeClass("active");
+            $("#linkJoin").addClass("active");
+            $("#tabJoin").addClass("show active");
+        } else {
+            if ($("#linkFaq").hasClass("active")) {
+                $("#tabFaq").removeClass("show active");
+                $("#linkFaq").removeClass("active");
+                $("#linkJoin").addClass("active");
+                $("#tabJoin").addClass("show active");
+            } else {
+                if ($("#linkAbout").hasClass("active")) {
+                    $("#tabAbout").removeClass("show active");
+                    $("#linkAbout").removeClass("active");
+                    $("#linkJoin").addClass("active");
+                    $("#tabJoin").addClass("show active");
+                }
+            }
+        }
+    });
+});
+
+// $(function () {
+//     $(".card-deck")
+//         .children("#presidentCard")
+//         .mouseover(function () {
+//             $("#presidentCard").removeClass("border-succeses");
+//             $("#presidentCard").addClass("border-warning");
+//         });
+// });
+
 // $(function () {
 //     $("#dropMeet").click(function () {
 //         $("#linkAbout").removeClass("active");

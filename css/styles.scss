@@ -1,3 +1,4 @@
+// main colors
 $logo-green: #4c5401;
 $logo-yellow: #ffa626;
 $logo-lightYellow: #f8c37a;
@@ -10,6 +11,7 @@ h3 {
     font-family: "Amatic SC";
 }
 
+// jumbotron styling
 .jumbotron {
     padding: 30px;
     background-image: linear-gradient(to right, $logo-yellow, $logo-green);
@@ -17,6 +19,7 @@ h3 {
     margin: 0;
 }
 
+// navbar styling
 .navbar {
     background-color: $logo-green;
 }
@@ -25,6 +28,7 @@ h3 {
     background-color: $logo-yellow;
 }
 
+// footer styling
 .site-footer {
     background-image: linear-gradient($logo-lightYellow, $logo-lightGreen);
     padding: 20px 0;
@@ -38,8 +42,22 @@ html {
     background-color: $logo-yellow;
 }
 
+// card styling
 .card-header-green {
     background-color: $logo-green;
+}
+
+.card-header-yellow {
+    background-color: $logo-yellow;
+}
+
+#tabMeet {
+    .card {
+        border-color: $logo-green;
+    }
+    .card:hover {
+        border-color: $logo-yellow;
+    }
 }
 
 .row-content {
@@ -48,6 +66,7 @@ html {
     min-height: 200px;
 }
 
+// carousel styling
 .carousel-inner,
 .carousel-item {
     background-color: darkslategrey;
@@ -63,11 +82,33 @@ html {
     height: auto;
 }
 
+// media queries
+
+// photo media queries
+
+@media screen and (max-width: 768px) {
+    #mdHall {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #anthodites {
+        width: 100%;
+        height: auto;
+    }
+}
+
+// calendar media query
+
 @media screen and (max-width: 768px) {
     .calendar {
         height: 500px;
     }
 }
+
+// facebook media queries
 
 @media screen and (min-width: 768px) {
     .fb-page {
