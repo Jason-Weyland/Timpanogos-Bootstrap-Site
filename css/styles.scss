@@ -127,3 +127,13 @@ html {
         width: 452.8px;
     }
 }
+
+// paypal
+paypal.Buttons({
+    style: {
+        shape: 'rect',
+        color: 'blue',
+        layout: 'vertical',
+        label: 'paypal',
+        
+    },
