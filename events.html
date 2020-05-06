@@ -34,8 +34,12 @@
                             <h2 class="col-12 d-none d-md-inline-flex offset-2"><small>Waste nothing but time..."</small></h2>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-end align-self-center">
-                        <a href=""><button type="button" class="btn btn-warning btn-lg mt-4">Join Us</button></a>
+                    <div class="col d-flex justify-content-sm-center justify-content-lg-end align-self-center">
+                        <form class="form-inline ml-auto d-none d-sm-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                        <button role="button" class="btn btn-warning btn-lg mt-4 d-inline d-sm-none" data-toggle="modal" data-target="#signinModal">Sign In</button>
                     </div>
                 </div>
             </div>
@@ -57,17 +61,21 @@
                             >
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            <a class="nav-link" href="about.html" id="navbarDropdown" role="button" data-toggle=""
+                                ><i class="fa fa-info fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> About</small></span
+                                ><span class="d-sm-none d-lg-inline"> About</span></a
+                            >
+                            <!-- <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown"
                                 ><i class="fa fa-info fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> About</small></span
                                 ><span class="d-sm-none d-lg-inline"> About</span></a
                             >
                             <div class="dropdown-menu">
-                                <a class="dropdown-item text-dark" href="about.html">About</a>
+                                <a class="dropdown-item text-dark" id="dropAbout" href="about.html">About</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-dark" href="about.html">Meet the Grotto</a>
-                                <a class="dropdown-item text-dark" href="about.html">FAQ</a>
-                                <a class="dropdown-item text-dark" href="about.html">Become a Member</a>
-                            </div>
+                                <a class="dropdown-item text-dark" id="dropMeet" href="about.html">Meet the Officers</a>
+                                <a class="dropdown-item text-dark" id="dropFaq" href="about.html">FAQ</a>
+                                <a class="dropdown-item text-dark" id="dropJoin" href="about.html">Become a Member</a>
+                            </div> -->
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#"
@@ -88,13 +96,17 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"
+                            <a class="nav-link" href="contact.html"
                                 ><i class="fa fa-id-card fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Contact</small></span
                                 ><span class="d-sm-none d-lg-inline"> Contact</span></a
                             >
                         </li>
                     </ul>
-                    <span class="nav-text text-light ml-auto">
+                    <form class="form-inline ml-auto d-inline d-sm-none">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <span class="nav-text text-light ml-auto d-none d-sm-inline">
                         <a role="button" data-toggle="modal" data-target="#signinModal"
                             ><i class="fa fa-sign-in fa-lg d-sm-none d-md-inline"></i><span class="d-none d-sm-inline d-lg-none"><small> Sign In</small></span
                             ><span class="d-sm-none d-lg-inline"> Sign In</span></a
@@ -103,7 +115,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Modal -->
+        <!-- Sign in Modal -->
         <div class="modal fade" role="dialog" id="signinModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -154,39 +166,264 @@
             </div>
         </nav>
 
-        <!-- cards -->
+        <!-- page content -->
         <div class="container">
+            <!-- Grotto Events -->
+            <div class="row d-flex justify-content-center">
+                <h2 class="mt-3"><strong>Grotto Events</strong></h2>
+            </div>
             <div class="row row-content">
-                <div class="col-md-6 my-2">
+                <!-- upcoming events card -->
+                <div class="col-lg-6">
+                    <div class="card border-primary mt-lg-5" style="width: 100%; overflow-y: scroll; max-height: 500px;">
+                        <div class="card-header card-header-green">
+                            <h2 class="card-title text-light text-center">Upcoming Events</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>May 5th</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>Sinkhole de Mayo</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>May 16th</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>Vertical Training @ dogwood</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>June 18th</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>Grotto meeting at library @ 7pm</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>May 23rd</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p class="bg-warning">Cave trips are viewable for members only</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- create event button -->
+                    <div class="row">
+                        <div class="col d-flex justify-content-center mt-2">
+                            <button type="button" role="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal">Create an Event</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- calendar plugin -->
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                    <h3 class="text-center"><strong>Grotto Calendar</strong></h3>
+                    <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=jason.weyland13%40gmail.com&ctz=America%2FNew_York" width="100%" height="500px" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+            <!-- grotto news -->
+            <div class="row d-flex justify-content-center">
+                <h2 class="mt-3"><strong>Recent News</strong></h2>
+            </div>
+            <div class="row row-content">
+                <!-- facebook plugin -->
+                <div class="col-12 d-flex justify-content-center col-lg-6 my-2 order-last order-lg-first">
                     <div class="fb-page" data-href="https://www.facebook.com/timpanogosgrotto/" data-tabs="timeline" data-width="500" data-height="auto" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
                         <blockquote cite="https://www.facebook.com/timpanogosgrotto/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/timpanogosgrotto/">Timpanogos Grotto</a></blockquote>
                     </div>
                 </div>
-                <div class="col-md-6 my-2">
-                    <div class="card border-primary">
+                <!-- recent trips card -->
+                <div class="col-12 d-flex justify-content-center col-lg-6 my-2">
+                    <div class="card border-primary" style="width: 100%; overflow-y: scroll; max-height: 500px;">
+                        <div class="card-header card-header-green">
+                            <h2 class="card-title text-light text-center">Recent Trips</h2>
+                        </div>
                         <div class="card-body">
-                            <h2 class="card-title">Recent Trips</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut debitis tempore quod amet alias, architecto placeat sequi maiores adipisci, cum minima quas error consequatur sunt tempora iure magnam repellat reiciendis?</p>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>March 5th 2020</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>Main Drain: neffs inlet breakout</p>
+                                    <p>Boomerang dome climb</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>March 12th 2020</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>LBCC Black Stream push</p>
+                                    <p>BBCC Survey dead air passage</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>March 20th 2020</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>Nielson's Well Rigging below Fantasy</p>
+                                    <p>Ridgwalking around Nielsons</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 bg-light">
+                                    <h4>March 27th 2020</h4>
+                                </div>
+                                <div class="col-10 offset-sm-1">
+                                    <p>Polygamy goes! The new found route to Main Drain</p>
+                                    <p>Carnivorous sump dug open</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 my-2">
-                    <div class="card border-primary">
-                        <div class="card-body">
-                            <h2 class="card-title">Instagram Feed</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, labore alias exercitationem dolorem ipsa consequatur atque eaque tempore ullam non obcaecati placeat eveniet mollitia ad doloribus eligendi nesciunt sapiente saepe.</p>
-                        </div>
-                    </div>
-                </div> -->
+                <!-- submit trip report button -->
+                <div class="col-12 d-flex justify-content-center justify-content-lg-start offset-lg-8 mb-3 mb-lg-0">
+                    <a href="trip.html"><button type="button" role="button" class="btn btn-primary">Submit a Trip Report</button></a>
+                </div>
             </div>
         </div>
-
-        <!-- calendar -->
-        <div class="container">
-            <div class="row row-content">
-                <div class="col">
-                    <h2 class="text-center"><strong>Grotto Calendar</strong></h2>
-                    <iframe class="calendar" src="https://calendar.google.com/calendar/embed?src=jason.weyland13%40gmail.com&ctz=America%2FNew_York" width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
+        <!-- event modal -->
+        <div class="modal fade" role="dialog" id="eventModal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2><strong>Create an Event</strong></h2>
+                        <button class="close text-light" type="button" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <!-- modal nav -->
+                                    <ul class="nav nav-pills d-flex justify-content-center mb-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a href="#eventTab" class="nav-link active" role="tab" data-toggle="tab">Grotto Event</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#tripTab" class="nav-link" role="tab" data-toggle="tab">Cave Trip</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <!-- event tab -->
+                                        <div class="tab-pane fade show active" id="eventTab" role="tabpanel">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <form action="" method="">
+                                                            <div class="form-row form-group">
+                                                                <div class="col">
+                                                                    <input type="text" class="form-control" name="eventName" id="eventName" placeholder="Name of Event" />
+                                                                </div>
+                                                                <div class="col">
+                                                                    <input type="date" class="form-control" name="eventDate" id="eventDate" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col">
+                                                                    <input type="text" name="eventLoc" id="eventLoc" class="form-control" placeholder="Event Location" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row mt-3">
+                                                                <div class="col">
+                                                                    <textarea name="eventDetails" id="eventDetails" rows="10" placeholder="Event Details..." class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row mt-3">
+                                                                <div class="col d-flex justify-content-center">
+                                                                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- cave trip tab -->
+                                        <div class="tab-pane fade" id="tripTab" role="tabpanel">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <form action="" method="">
+                                                            <div class="form-row form-group">
+                                                                <div class="col-6 col-md-4">
+                                                                    <input type="text" id="caveName" name="caveName" class="form-control" placeholder="Cave/Area Visiting" />
+                                                                </div>
+                                                                <div class="col-6 col-md-4">
+                                                                    <input type="date" id="caveDate" name="caveDate" class="form-control" data-toggle="tooltip" title="date of trip" />
+                                                                </div>
+                                                                <div class="col-12 col-md-4 mt-2 mt-md-0">
+                                                                    <select id="caveTripType" name="caveTripType" class="form-control">
+                                                                        <option value="na">Type of Trip</option>
+                                                                        <option value="recreational">Recreational</option>
+                                                                        <option value="survey">Survey</option>
+                                                                        <option value="rigging">Rigging</option>
+                                                                        <option value="bolting">Botling</option>
+                                                                        <option value="science">Science</option>
+                                                                        <option value="ridgeWalking">Ridge Walking</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row form-group">
+                                                                <div class="col-6 col-md-8">
+                                                                    <input type="text" id="tripLeader" name="tripLeader" class="form-control" placeholder="Trip Leader" />
+                                                                </div>
+                                                                <div class="col-6 col-md-4">
+                                                                    <select id="partySize" name="partySize" class="form-control">
+                                                                        <option value="na">Party Size</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                        <option value="7">7</option>
+                                                                        <option value="8">8</option>
+                                                                        <option value="9">9</option>
+                                                                        <option value="10">10</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row form-group">
+                                                                <div class="col-12 col-lg-3 mb-1 mb-lg-0">
+                                                                    <input type="text" name="callout" id="callout" class="form-control" placeholder="Callout Person" />
+                                                                </div>
+                                                                <div class="col-12 col-lg-4 my-1 my-lg-0">
+                                                                    <input type="tel" name="calloutTel" id="calloutTel" class="form-control" placeholder="Callout Contact Num" />
+                                                                </div>
+                                                                <div class="col-12 col-lg-5 mt-1 mt-lg-0">
+                                                                    <input type="datetime-local" name="calloutTime" id="calloutTime" class="form-control" data-toggle="tooltip" title="Callout Time" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row mt-3">
+                                                                <div class="col">
+                                                                    <textarea name="tripDetails" id="tripDetails" rows="5" placeholder="Trip Details..." class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row mt-3">
+                                                                <div class="col d-flex justify-content-center">
+                                                                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,7 +440,7 @@
                             <li><a href="#">Grotto News & Events</a></li>
                             <li><a href="#">Caves</a></li>
                             <li><a href="about.html">Join Us</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                             <!-- </small> -->
                         </ul>
                     </div>
@@ -238,7 +475,12 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="js.js"></script>
+        <script src="JavaScript/script.js"></script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
     </body>
